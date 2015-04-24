@@ -1,0 +1,19 @@
+public class Main {
+	
+	public static int[][] numArray; //multiple variables // now double array
+	
+	public static void main(String[]args) {
+		numArray = new int[4][4]; // can put 4 numbers in the array
+		numArray[0][0] = 9; // start counting at 0
+		numArray[1][3] = 2;
+		numArray[2][1] = 7;
+		numArray[3][3] = 3;
+		numArray[3][0] = 8;
+		for (int i = 0; i < numArray.length; i++) { //loop that goes through all the parts of the array and does something to each one
+			System.out.println();
+			for (int j = 0; j < numArray[i].length; j++){
+				System.out.print(numArray[i][j]);
+			}
+		}
+	}
+}
