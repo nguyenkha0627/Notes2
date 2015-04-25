@@ -1,0 +1,48 @@
+//first
+
+package Data;
+
+public class First {
+
+	public static int a=0;
+	Animal[] animals = new Animal[3];
+	
+	public First() { //constructor
+		System.out.println("First class started");
+		Animal a = new Animal("Cat","Meow!");
+		animals[0] = new Animal("Cat", "Meow!");
+		animals[1] = new Animal("Giraffee", "Meow!");
+		animals[2] = new Animal("Human", "Blabla!");
+		for (int i = 0; i< animals.length; i++)
+			animals[i].MakeSound();
+		
+	}
+	public static void main(String[] args){
+		new First(); //instantiate the constructor
+	
+	}
+}
+
+
+
+
+
+// animal
+
+package Data;
+
+public class Animal {
+	
+	private String name, sound;
+	
+	public Animal(String newName, String newSound) { // another constructor
+		System.out.println("Animal created!");
+	name = newName;
+	sound = newSound;
+	}
+	
+	public void MakeSound() {
+		System.out.println(sound);
+		
+	}
+}
